@@ -1,0 +1,108 @@
+/* ************************ */
+/* General */
+/* ************************ */
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1;
+  font-weight: 400; 
+  background-color: #dae0f2;
+  color: white;
+}
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+/* ************************ */
+/* Design the Game */
+/* ************************ */
+.container{
+  width: 40%;
+  margin: 3rem auto;
+}
+.game-title{
+  font-size: 4.4rem;
+  text-align: center;
+  background-color: #3a015c;
+  padding: 1.8rem 0;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+.game-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+.box{
+  height: 12rem; 
+  background-color: #3a015c;
+  margin: 0.3rem 0.6rem;
+  font-size: 4.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.box:hover{
+  cursor: pointer;
+  background-color: #7302b4;
+}
+
+/* ************************ */
+/* Queries */
+/* ************************ */
+
+/* ************************ */
+/* below 912px  */
+/* ************************ */
+@media (max-width: 57em) {
+ .container{
+  width: 60%;
+ }
+}
+
+/* ************************ */
+/* below 624px  */
+/* ************************ */
+@media (max-width: 39em) {
+  .container{
+    width: 70%;
+  }
+}
+
+/* ************************ */
+/* below 528 */
+/* ************************ */
+@media (max-width: 33em) {
+  .container{
+    width: 80%;
+  }
+}
+
+
+/* ************************ */
+/* below 464 */
+/* ************************ */
+@media (max-width: 29em) {
+  .container{
+    width: 90%;
+  }
+  .box{
+    height: 10rem;
+  }
+}
